@@ -6,15 +6,15 @@ La aplicación utiliza **dos componentes** que se encargan de formatear los dato
 
 Se utilizan las siguientes **URLs** de la **API de GitHub**:
 - https://api.github.com/users/{USER} - Al hacer una petición **GET** a este punto de destino sustituyendo `{USER}` por un usuario concreto, se obtienen los **datos de dicho usuario**. Para la práctica se utilizan los siguientes campos del objeto de datos devuelto:
-  - ~login~ - Login del usuario para mostrarlo por pantalla.
-  - ~avatar_url~ - URL de la imagen del avatar del usuario.
-  - ~html_url~ - URL de la página de GitHub del usuario.
-  - ~repos_url~ - URL para obtener la lista de repositorios del usuario.
+  - *login* - Login del usuario para mostrarlo por pantalla.
+  - *avatar_url* - URL de la imagen del avatar del usuario.
+  - *html_url* - URL de la página de GitHub del usuario.
+  - *repos_url* - URL para obtener la lista de repositorios del usuario.
 - https://api.github.com/users/{USER}/repos - Al hacer una petición **GET** a este punto de destino sustituyendo `{USER}` por un usuario concreto, se obtiene el **listado de los repositorios** de dicho usuario. En este caso los datos devueltos tienen formato de **array**. De cada elemento (repositorio) del array tenemos las siguientes propiedades:
-  - ~full_name~ - Nombre completo del repositorio
-  - ~html_url~ - URL para acceder al repositorio a través de la web de GitHub
-  - ~description~ Descripción del repositorio
-  - ~forks_count~ - Número de forks que tiene el repositorio
+  - *full_name* - Nombre completo del repositorio
+  - *html_url* - URL para acceder al repositorio a través de la web de GitHub
+  - *description* Descripción del repositorio
+  - *forks_count* - Número de forks que tiene el repositorio
 
 
 
